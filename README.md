@@ -7,3 +7,4 @@ First, please install all dependencies by executing `npm i`.
 To launch the application please execute `npm run dev`.
 
 To read more about the project please go to: https://fullstack-developer.academy/using-next-js-and-auth0/
+# power-bank
