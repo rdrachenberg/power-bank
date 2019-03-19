@@ -18,7 +18,7 @@ export default Page => class SecureTemplate extends React.Component {
       return (
         <div>
           <Header { ...this.props } />
-          <p>You're not authorised. Try to <a href="/login">Login</a></p>  
+          <p>Expired or invalid credentials. Try to <a href="/login">Login</a></p>  
         </div>
       )
     }

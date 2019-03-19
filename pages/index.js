@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
 import { getToken } from '../static/auth.js';
 import template from '../static/template';
+import Button from '@material-ui/core/Button';
 
 const Index = ({ isLoggedIn }) => (
   <div>
-    Hello, this is the main application.
+    <h1>Power Bank</h1>
+    <h2> Welcome to your future!</h2>
     { !isLoggedIn && (
-      <p>You're not logged in yet</p>
+    <Button href="/login" variant="contained" color="primary" className="loginButton">
+      Please Login
+    </Button>
     )}
   </div>
 );

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 const Header = ({ isLoggedIn }) => (
   <div>
+    <link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css"></link>
     <style jsx>{`
       ul {
         list-style-type: none;
@@ -31,12 +32,11 @@ const Header = ({ isLoggedIn }) => (
     <nav>
       <ul>
         <li><Link href="/"><a>Home</a></Link></li>
-        <li><Link href="/public"><a>Public</a></Link></li>
-        { isLoggedIn ? ( <li><Link href="/secret"><a>Secret</a></Link></li> ) : ( <li><Link href="/login"><a>Login</a></Link></li> ) }
+        { isLoggedIn ? (<li><Link href="/public"><a>Power Bank</a></Link></li>) : ('') } 
+        { isLoggedIn ? ( <li><Link href="/secret"><a>Returns</a></Link></li> ) : ( <li><Link href="/login"><a>Login</a></Link></li> ) }
         { isLoggedIn ? ( <li><Link href="/logout"><a>Logout</a></Link></li> ) : ( '' ) }
       </ul>
     </nav>
-    <h1>Auth0 & Next.js</h1>
   </div>
 )
 
