@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import SecureTemplate from '../static/secure-template';
 import Btc from '../components/Btc';
-import Table from '../components/Table';
 
 
 const Secret = ({ loggedInUser}) => (
@@ -26,7 +25,6 @@ const Secret = ({ loggedInUser}) => (
       <pre>Hi { loggedInUser.given_name }! </pre>
       <Btc/>
       {/* <pre>{ JSON.stringify(loggedInUser, null, 2) }</pre> */}
-      <Table />
     </div>
   </div>
 )
