@@ -42,9 +42,10 @@ class Btc extends Component {
                     monthlyReturns: monthlyReturns,
                     yearlyReturns: yearlyReturns,
                     term: term,
+                    percentReturns: percentReturns,
                 });
                 
-                console.log(cryptos.BTC.USD);
+                console.log(percentReturns);
             }).then(returns => {
                 localStorage.setItem('returns', JSON.stringify(this.state.returns));
                 localStorage.setItem(['cryptos'], 'BTC');
