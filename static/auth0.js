@@ -14,7 +14,7 @@ function webAuth(clientID, domain) {
 function login() {
   const options = {
     responseType: 'id_token',
-    redirectUri: 'https://power-bank-xiojfxnksx.now.sh/redirect' || 'http://localhost:3000/redirect',
+    redirectUri: 'https://power-bank-xiojfxnksx.now.sh/redirect',
     scope: 'openid profile email'
   };
   
