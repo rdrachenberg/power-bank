@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import cryptos from '../components/Btc';
-import { Btc } from '../components/Btc';
+import Btc  from '../components/Btc.js';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 
-
+console.log(Btc);
 
 let miningReturn = 0.00028823;
 
@@ -35,7 +35,7 @@ class Table extends React.Component {
     this.state = {
       returns: this.props.returns,
     }
-
+  console.log(returns + 'table constructor')
   }
   render() {
     let returns = this.state.returns;
